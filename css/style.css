@@ -42,6 +42,12 @@ html {
   gap: 1.6rem;
 }
 
+.menuMobile i{
+  display: none;
+  font-size: 40px;
+  color: aliceblue;
+}
+
 .links {
   color: var(--font-color);
   text-decoration: none;
@@ -85,12 +91,12 @@ html {
 }
 
 .filmesContainer {
-  gap: 20px;
+  gap: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  height: 100%;
+  
 }
 
 .filmeBlock {
@@ -130,4 +136,25 @@ html {
 .filmePoster:hover {
   transform: scale(1.05);
   cursor: pointer;
+}
+
+@media (max-width:856px) {
+  .profile{
+    display: none;
+  }
+
+  .navBar{
+    display: none;
+  }
+
+  .navBarContainer{
+    justify-content: space-between;
+    margin: 0px 5px 0px 10px;
+  }
+
+  .menuMobile i{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15px;
+  }
 }
